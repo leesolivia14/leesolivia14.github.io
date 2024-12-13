@@ -3,7 +3,7 @@ import '../App.css'
 
 function Intro () {
     return (
-        <div className>
+        <div >
             <div className="intro">
                 <h1>
 

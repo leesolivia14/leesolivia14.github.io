@@ -8,13 +8,17 @@ function App() {
 
   return (
 	<>
-		<div>
-			<div className="flex-container">
+		<div className="stars">
+			<div className="grid-container">
 				<Intro />
+				
 				<Portfolio />
 				
 			</div>
-			<Footer />
+			<div class="footer">
+				<Footer />
+			</div>
+			
 		</div>
 	 </>
   )

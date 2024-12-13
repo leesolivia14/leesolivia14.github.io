@@ -5,9 +5,10 @@ import '../App.css'
 
 function Portfolio () {
     return (
-        <div className="projects-flex">
-            <div className="projects-grid">
+        <div className="projects-grid">
+
                 {portfolio.map(project => (
+                <div className="project-item">
                     <PortfolioItem 
                         imgUrl={project.imgUrl}
                         title={project.title}
@@ -15,8 +16,9 @@ function Portfolio () {
                         stack={project.stack}
                         link={project.link}
                     />
+                </div>
                 ))}
-            </div>
+
         </div>
     )
 }

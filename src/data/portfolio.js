@@ -20,4 +20,26 @@ export default [
         stack: ['Python', 'Machine Learning'],
         link: 'https://github.com/leesolivia14/HackNYU-workspace',
     },
+    {
+        title: 'College Collage',
+        imgUrl: '/assets/_G0A3975.jpg',
+        description: '',
+        stack: ['Python', 'Machine Learning'],
+        link: 'https://github.com/leesolivia14/HackNYU-workspace',
+    },
+    {
+        title: 'College Collage',
+        imgUrl: '/assets/_G0A3975.jpg',
+        description: '',
+        stack: ['Python', 'Machine Learning'],
+        link: 'https://github.com/leesolivia14/HackNYU-workspace',
+    },
+    {
+        title: 'College Collage',
+        imgUrl: '/assets/_G0A3975.jpg',
+        description: '',
+        stack: ['Python', 'Machine Learning'],
+        link: 'https://github.com/leesolivia14/HackNYU-workspace',
+    },
+
 ]
