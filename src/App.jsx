@@ -3,19 +3,21 @@ import Footer from './components/Footer';
 import Intro from './components/Intro';
 import Portfolio from './components/Portfolio';
 import './App.css'
+import Navbar from './components/Navbar';
 
 function App() {
 
   return (
 	<>
-		<div className="stars">
+		<div className="App">
+				<Navbar />
 			<div className="grid-container">
-				<Intro />
+				<div id="intro"><Intro /></div>
+			<div id="projects"><Portfolio /></div>
 				
-				<Portfolio />
 				
 			</div>
-			<div class="footer">
+			<div className="footer">
 				<Footer />
 			</div>
 			

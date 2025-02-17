@@ -7,12 +7,14 @@ function Portfolio () {
     return (
         <div className="projects-grid">
 
-                {portfolio.map(project => (
-                <div className="project-item">
+                {portfolio.map((project, index) => (
+                <div className="project-item" key={index}>
                     <PortfolioItem 
                         imgUrl={project.imgUrl}
+                        videoUrl={project.videoUrl}
                         title={project.title}
                         description={project.description}
+                        extra={project.extra}
                         stack={project.stack}
                         link={project.link}
                     />

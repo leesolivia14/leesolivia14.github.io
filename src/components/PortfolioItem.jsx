@@ -1,28 +1,48 @@
 import React from 'react';
 
-function PortfolioItem({ title, imgUrl, description, stack, link }) {
+function PortfolioItem({ title, imgUrl, videoUrl, description, extra, stack, link }) {
     return (
-        <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <div className="w-full p-4">
-                <h3 className="text-lg md:text-xl dark:text-white mb-2
-                md:mb-3 font:semibold">{title}</h3>
-                <p>{description}</p>
-                <p>
-                    {stack.map(item => (
-                        <span>
+        <div>
+            {/* Title as a hyperlink */}
+            <h3>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                    {title}
+                </a>
+            </h3>
+
+            <div className="content">
+                <p className="description">{description}</p>
+                <b>{extra && <p className="extra-text">{extra}</p>}</b>
+                <br/>
+
+                {/* Stack container remains at the bottom */}
+                <p className="stack-container">
+                    {stack.map((item, index) => (
+                        <span key={index} className="stack-item">
                             {item}
                         </span>
-                        
                     ))}
                 </p>
-
             </div>
-        </a>
-    )
+
+
+            {videoUrl ? (
+                <div className="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src={videoUrl} 
+                        title={title} 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                    ></iframe>
+                </div>
+            ) : (
+                imgUrl && <img src={imgUrl} alt={title} />
+            )}
+
+        </div>
+    );
 }
+
 
 export default PortfolioItem;
