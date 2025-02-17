@@ -1,7 +1,7 @@
 export default [
     {
         title: 'Soccer Passmap',
-        imgUrl: '/assets/passmap.png',
+        imgUrl: 'assets/passmap.png',
         description: 'A passmap that shows the most common pass routes in the Champions League Final 2017 [Real Madrid vs. Juventus]',
         stack: ['Python', 'pandas', 'numpy', 'statsbombpy'],
         link: 'https://github.com/leesolivia14/passmap',
