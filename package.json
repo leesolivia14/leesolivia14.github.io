@@ -1,7 +1,7 @@
 {
   "name": "leesolivia14.github.io",
   "homepage": "https://leesolivia14.github.io/",
-  "private": true,
+  "private": falseßß,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
