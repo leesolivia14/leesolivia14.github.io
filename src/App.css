@@ -96,10 +96,10 @@ html {
 
 @media (min-width: 1200px) {
     .navbar {
-        padding-right: 100px; /* Increase padding-right for larger screens */
+        padding-right: 50px; /* Increase padding-right for larger screens */
     }
     .intro {
-        margin-right: 100px; /* Increase margin-right for larger screens */
+        margin-right: 50px; /* Increase margin-right for larger screens */
     }
 }
 
