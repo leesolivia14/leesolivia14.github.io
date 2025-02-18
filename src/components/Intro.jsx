@@ -29,7 +29,7 @@ function Intro() {
                             I'm currently learning <br/>
                         
                                 📱 iOS Development (for fun) <br/> and 
-                                 Kubernetes and Terraform (at work)<br/><br/>
+                                 👩‍💻 Kubernetes and Terraform (at work)<br/><br/>
                             
                          
                         </div>
@@ -40,7 +40,7 @@ function Intro() {
                                 🛹 Skateboarding, <br/>
                                 ⚽ Soccer, <br/>
                             
-                             🎷 Jazz, <br/>📖 E-ink gadgets, <br/>and ⌨️ Mechanical Keyboards<br/>
+                             🎷 Jazz, <br/>📖 E-ink gadgets, <br/>and ⌨️ Mechanical Keyboards!<br/>
                         </div>
                     </div>
                     
