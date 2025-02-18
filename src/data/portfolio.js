@@ -8,6 +8,7 @@ export default [
     },
     {
         title: 'Movie Title Generator',
+        //imgUrl: 'assets/Screenshot 2025-02-17 at 11.11.34 PM.png',
         description: 'Generate, save, and manage randomized or custom movie titles, with account-based features for personalized title storage',
         stack: ['JavaScript', 'Node.js', 'Express.js', 'Passport.js', 'MongoDB'],
         link: 'https://github.com/leesolivia14/Movie-Title-Generator',

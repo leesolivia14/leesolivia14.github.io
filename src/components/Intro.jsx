@@ -30,7 +30,7 @@ function Intro() {
                             <p>📱 iOS Development (for fun), Kubernetes and Terraform (at work)</p>
                         </div>
                         <div className="interests">
-                            <h3>Besides coding, I'm a big fan of...</h3>
+                            <h3>Besides coding, I'm also a big fan of...</h3>
                             <p>🧩 Cubing, 🛹 Skateboarding, ⚽ Soccer, 🎷 Jazz, 📖 E-ink gadgets, ⌨️ Mechanical Keyboards</p>
                         </div>
                     </div>
