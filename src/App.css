@@ -29,7 +29,7 @@ body {
     left: 42%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    color: rgba(255, 176, 66, 0.9); /* Light transparency */
+    color: rgba(255, 106, 106, 0.9); /* Light transparency */
     white-space: nowrap; /* Prevents breaking */
     z-index: -1; /* Sends it to the background */
     user-select: none; /* Prevents selection */
@@ -45,6 +45,14 @@ body {
 }
 
 
+/* Adjust font-size for mobile devices */
+@media (max-width: 600px) {
+    .main-title {
+        top: 40%;
+        left: %;
+        font-size: clamp(4rem, 12vw, 9rem); /* Increase the font size for mobile */
+    }
+}
 
 /*Navbar*/
 html {
@@ -85,12 +93,49 @@ html {
     font-color: black;
 }
 
-/* Adjust layout for larger screens */
-@media (min-width: 1400px) {
+
+@media (min-width: 1200px) {
+    .navbar {
+        padding-right: 100px; /* Increase padding-right for larger screens */
+    }
     .intro {
-        font-size: 24px;
-        margin-left: auto; 
-        margin-right: 50px; 
+        margin-right: 100px; /* Increase margin-right for larger screens */
+    }
+}
+
+@media (min-width: 1600px) {
+    .navbar {
+        padding-right: 200px; /* Further increase padding-right for even larger screens */
+    }
+    .intro {
+        margin-right: 200px; /* Further increase margin-right for even larger screens */
+    }
+}
+
+@media (min-width: 2000px) {
+    .navbar {
+        padding-right: 300px; /* Further increase padding-right for even larger screens */
+    }
+    .intro {
+        margin-right: 300px; /* Further increase margin-right for even larger screens */
+    }
+}
+
+@media (min-width: 2400px) {
+    .navbar {
+        padding-right: 400px; /* Further increase padding-right for even larger screens */
+    }
+    .intro {
+        margin-right: 400px; /* Further increase margin-right for even larger screens */
+    }
+}
+
+@media (min-width: 2800px) {
+    .navbar {
+        padding-right: 500px; /* Further increase padding-right for even larger screens */
+    }
+    .intro {
+        margin-right: 500px; /* Further increase margin-right for even larger screens */
     }
 }
 
