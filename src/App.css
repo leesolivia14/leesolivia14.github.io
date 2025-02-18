@@ -29,7 +29,7 @@ body {
     left: 42%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.9); /* Light transparency */
+    color: rgba(255, 176, 66, 0.9); /* Light transparency */
     white-space: nowrap; /* Prevents breaking */
     z-index: -1; /* Sends it to the background */
     user-select: none; /* Prevents selection */
