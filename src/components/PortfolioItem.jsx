@@ -4,12 +4,13 @@ function PortfolioItem({ title, imgUrl, videoUrl, description, extra, stack, lin
     return (
         <div>
             {/* Title as a hyperlink */}
+            <div className="project-link">
             <h3>
                 <a href={link} target="_blank" rel="noopener noreferrer">
                     {title}
                 </a>
             </h3>
-
+            </div>
             <div className="content">
                 <p className="description">{description}</p>
                 <b>{extra && <p className="extra-text">{extra}</p>}</b>

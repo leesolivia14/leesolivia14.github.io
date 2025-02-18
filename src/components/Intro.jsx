@@ -8,7 +8,7 @@ function Intro() {
         <div className="intro-container">
             {/* Intro Text */}
             <div className="intro">
-                
+                {/* Intro Text 
                 <h1>
                     <Typewriter
                         words={["Hi there! It's Olivia 👋."]}
@@ -20,18 +20,27 @@ function Intro() {
                         delaySpeed={1500}
                     />
                 </h1>
-
+                */}
                 <p>
-                    I graduated from NYU recently with a Bachelor's in Computer Science.
+                    I graduated from NYU recently <br/>with a Bachelor's in Computer Science.<br/><br/>
               
                     <div className="learning-interests-container">
                         <div className="learning">
-                            <h3>I'm currently learning...</h3>
-                            <p>📱 iOS Development (for fun), Kubernetes and Terraform (at work)</p>
+                            I'm currently learning <br/>
+                        
+                                📱 iOS Development (for fun) <br/> and 
+                                 Kubernetes and Terraform (at work)<br/><br/>
+                            
+                         
                         </div>
                         <div className="interests">
-                            <h3>Besides coding, I'm also a big fan of...</h3>
-                            <p>🧩 Cubing, 🛹 Skateboarding, ⚽ Soccer, 🎷 Jazz, 📖 E-ink gadgets, ⌨️ Mechanical Keyboards</p>
+                            Besides coding, <br/>I'm also a big fan of<br />
+                            
+                                🧩 Cubing, <br/>
+                                🛹 Skateboarding, <br/>
+                                ⚽ Soccer, <br/>
+                            
+                             🎷 Jazz, <br/>📖 E-ink gadgets, <br/>and ⌨️ Mechanical Keyboards<br/>
                         </div>
                     </div>
                     
