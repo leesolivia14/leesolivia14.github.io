@@ -22,19 +22,27 @@ body {
     100% { transform: translate(-50%, -50%) translateX(0) translateY(0); }
 }
 
+@keyframes floatAroundMobile {
+    0% { transform: translate(-50%, -50%) translateX(0) translateY(0); }
+    25% { transform: translate(-50%, -50%) translateX(50px) translateY(-30px); }
+    50% { transform: translate(-50%, -50%) translateX(-30px) translateY(40px); }
+    75% { transform: translate(-50%, -50%) translateX(20px) translateY(-30px); }
+    100% { transform: translate(-50%, -50%) translateX(0) translateY(0); }
+}
+
   
 .main-title {
     position: absolute;
     top: 40%;
     left: 42%;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
     font-weight: bold;
-    color: rgba(255, 106, 106, 0.9); /* Light transparency */
+    color: rgb(0, 0, 0); /* Light transparency */
     white-space: nowrap; /* Prevents breaking */
     z-index: -1; /* Sends it to the background */
     user-select: none; /* Prevents selection */
     pointer-events: none; /* Ignore interactions */
-    filter: blur(5px);
+    //filter: blur(5px);
     font-size: clamp(3rem, 10vw, 7.25rem);
     position: absolute;
     font-weight: bold;
@@ -48,9 +56,37 @@ body {
 /* Adjust font-size for mobile devices */
 @media (max-width: 600px) {
     .main-title {
-        top: 40%;
-        left: %;
-        font-size: clamp(4rem, 12vw, 9rem); /* Increase the font size for mobile */
+        top: 45%;
+        left: 30%;
+        font-size: clamp(1rem, 5vw, 7.25rem); /* Decrease the font size for mobile */
+        animation: floatAround 10s infinite ease-in-out; /* Use a different animation for mobile */
+    }
+}
+
+@media (max-width: 1700px) {
+    .main-title {
+        top: 45%;
+        left: 30%;
+        font-size: clamp(1rem, 5vw, 7.25rem); /* Decrease the font size for mobile */
+        animation: floatAround 10s infinite ease-in-out; /* Use a different animation for mobile */
+    }
+}
+/* Adjust position for larger screens */
+@media (min-width: 1000px) {
+    .main-title {
+        top: 35%; /* Adjust top position for larger screens */
+    }
+}
+
+@media (min-width: 1600px) {
+    .main-title {
+        top: 30%; /* Adjust top position for even larger screens */
+    }
+}
+
+@media (min-width: 2000px) {
+    .main-title {
+        top: 25%; /* Adjust top position for even larger screens */
     }
 }
 
