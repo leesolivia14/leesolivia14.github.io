@@ -325,6 +325,9 @@ li {
 
 
 @media (max-width: 800px) {
+    .navbar {
+        justify-content: center;
+    }
     .main-title {
         top: 5%;
         left: 40%;
