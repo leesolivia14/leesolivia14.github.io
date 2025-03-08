@@ -16,7 +16,7 @@ export default [
     {
         title: 'College Collage',
         videoUrl: 'https://www.youtube.com/embed/CgauYkbXmjQ?si=MHgQcM2YAjbP_1pm',
-        description: 'Winner of HackNYU 2023, Education Track! Find college matches by generating a "collage" based on your profile and preferences.',
+        description: 'Built a recommendation system using a dataset of 1000 colleges and cosine similarity to find college matches. Generates a "collage" based on your profile and preferences. Winner of HackNYU 2023, where my friends and I made fun memories building it in 40 hours.',
         extra: '',
         stack: ['Python', 'Flask', 'Machine Learning'],
         link: 'https://github.com/leesolivia14/HackNYU-workspace',
