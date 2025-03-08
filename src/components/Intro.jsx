@@ -8,10 +8,9 @@ function Intro() {
         <div className="intro-container">
             {/* Intro Text */}
             <div className="intro">
-                {/* Intro Text 
                 <h1>
                     <Typewriter
-                        words={["Hi there! It's Olivia 👋."]}
+                        words={["Hi there! It's Olivia 👋"]}
                         loop={0} // Infinite loop
                         cursor
                         cursorStyle="_"
@@ -20,7 +19,7 @@ function Intro() {
                         delaySpeed={1500}
                     />
                 </h1>
-                */}
+               
                 <p>
                     I graduated from NYU recently <br/>with a Bachelor's in Computer Science.<br/><br/>
               
@@ -29,7 +28,7 @@ function Intro() {
                             I'm currently learning <br/>
                         
                                 📱 iOS Development (for fun) <br/> and 
-                                 👩‍💻 Kubernetes and Terraform (at work)<br/><br/>
+                                 👩‍💻 Kubernetes (at work)<br/><br/>
                             
                          
                         </div>

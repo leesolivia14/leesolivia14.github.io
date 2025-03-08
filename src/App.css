@@ -1,9 +1,30 @@
 /* Global styles */
-body {
-    font-family: 'Inter', sans-serif; /* Clean modern font */
+html, body {
+    height: auto;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    /* font-family: 'Inter', sans-serif; Clean modern font */
     color: #333;
     line-height: 1.6;
-    background-color: #f9f9f9; /* Subtle background */
+    /* background-color: #f9f9f9; Subtle background */
+}
+
+#holographic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto; /* Make it cover the whole page */
+    min-height: 100vh; /* Ensure it covers at least the viewport */
+    width: 100vw;
+    background-image: linear-gradient(
+        to right,
+        rgb(194, 255, 182),
+        rgb(255, 163, 182),
+        rgb(221, 169, 255),
+        rgb(162, 209, 255)
+    );
+    background-size: 200%;
+    z-index: -2;
 }
 
 @keyframes floatDiagonal {
@@ -32,14 +53,14 @@ body {
 
   
 .main-title {
-    position: absolute;
-    top: 40%;
+    position: fixed;
+    top: 25%;
     left: 42%;
     transform: translate(-30%, -50%);
     font-weight: bold;
     color: rgb(0, 0, 0); /* Light transparency */
     white-space: nowrap; /* Prevents breaking */
-    z-index: -1; /* Sends it to the background */
+    z-index: 5; /* Sends it to the background */
     user-select: none; /* Prevents selection */
     pointer-events: none; /* Ignore interactions */
     //filter: blur(5px);
@@ -53,42 +74,7 @@ body {
 }
 
 
-/* Adjust font-size for mobile devices */
-@media (max-width: 600px) {
-    .main-title {
-        top: 45%;
-        left: 30%;
-        font-size: clamp(1rem, 5vw, 7.25rem); /* Decrease the font size for mobile */
-        animation: floatAround 10s infinite ease-in-out; /* Use a different animation for mobile */
-    }
-}
 
-@media (max-width: 1700px) {
-    .main-title {
-        top: 45%;
-        left: 30%;
-        font-size: clamp(1rem, 5vw, 7.25rem); /* Decrease the font size for mobile */
-        animation: floatAround 10s infinite ease-in-out; /* Use a different animation for mobile */
-    }
-}
-/* Adjust position for larger screens */
-@media (min-width: 1000px) {
-    .main-title {
-        top: 35%; /* Adjust top position for larger screens */
-    }
-}
-
-@media (min-width: 1600px) {
-    .main-title {
-        top: 30%; /* Adjust top position for even larger screens */
-    }
-}
-
-@media (min-width: 2000px) {
-    .main-title {
-        top: 25%; /* Adjust top position for even larger screens */
-    }
-}
 
 /*Navbar*/
 html {
@@ -278,14 +264,14 @@ li {
 }
 
 .stack-item {
-    background-color: #f3f4f6;
+    /* background-color: #f3f4f6; */
     color: #333;
     padding: 6px 12px;
     border-radius: 12px;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    border: 1px solid #d1d5db;
+    border: 1px solid #000000;
 }
 
 
@@ -323,3 +309,57 @@ li {
     padding: 20px;
     margin-top: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .main-title {
+        top: 5%;
+        left: 40%;
+        font-size: clamp(1rem, 1vw, 7.25rem); 
+        animation: floatAround 10s infinite ease-in-out; 
+    }
+    .intro {
+        margin-top: 50px;
+        text-align: center; 
+    }
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+} 
+/* Adjust font-size for mobile devices
+@media (max-width: 1700px) {
+    .main-title {
+        top: 30%;
+        left: 40%;
+        font-size: clamp(3rem, 10vw, 7.25rem); /* Decrease the font size for mobile */
+        /* animation: floatAround 10s infinite ease-in-out; /* Use a different animation for mobile */
+   /* }
+}  */
+
+@media (min-width: 1000px) {
+    .main-title {
+        top: 20%; 
+    }
+}
+
+@media (min-width: 2000px) {
+    .main-title {
+        top: 20%; 
+    }
+} 
+*/
