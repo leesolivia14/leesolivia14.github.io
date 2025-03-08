@@ -323,11 +323,11 @@ li {
 
 
 
-
+/* mobile */
 @media (max-width: 800px) {
     .navbar {
         justify-content: center;
-        margin-left: 30px;
+        margin-left: 40px;
     }
     .main-title {
         top: 5%;
@@ -338,7 +338,7 @@ li {
     .intro {
         margin-top: 50px;
         text-align: center; 
-        margin-left: 30px;
+        margin-left: 40px;
     }
     .social-icons {
         display: flex;
