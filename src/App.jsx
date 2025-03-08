@@ -43,10 +43,11 @@ function App() {
 				{/* <div class="main-title">
 					<h1>Hello 👋 <br/>It's Olivia</h1>
 				</div> */}
-					<Navbar />
+					
 				<div className="grid-container">
+					<Navbar />
 					<div id="intro"><Intro /></div>
-				<div id="projects"><Portfolio /></div>
+					<div id="projects"><Portfolio /></div>
 					
 					
 				</div>

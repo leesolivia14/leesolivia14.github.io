@@ -86,7 +86,6 @@ html {
     justify-content: right;
     gap: 20px;
     //position: fixed;
-    padding-right: 55px;
     z-index: 1000;  /* Makes sure it stays above other content */
     //background-color: #f9f9f9;
     padding-top: 10px;
@@ -109,57 +108,11 @@ html {
     max-width: 800px;
     text-align: right; 
     margin-top: 70px;
-    margin-right: 50px;
     margin-left: auto;
     font-style: italic;
     font-color: black;
 }
 
-
-@media (min-width: 1200px) {
-    .navbar {
-        padding-right: 50px; /* Increase padding-right for larger screens */
-    }
-    .intro {
-        margin-right: 50px; /* Increase margin-right for larger screens */
-    }
-}
-
-@media (min-width: 1600px) {
-    .navbar {
-        padding-right: 200px; /* Further increase padding-right for even larger screens */
-    }
-    .intro {
-        margin-right: 200px; /* Further increase margin-right for even larger screens */
-    }
-}
-
-@media (min-width: 2000px) {
-    .navbar {
-        padding-right: 300px; /* Further increase padding-right for even larger screens */
-    }
-    .intro {
-        margin-right: 300px; /* Further increase margin-right for even larger screens */
-    }
-}
-
-@media (min-width: 2400px) {
-    .navbar {
-        padding-right: 400px; /* Further increase padding-right for even larger screens */
-    }
-    .intro {
-        margin-right: 400px; /* Further increase margin-right for even larger screens */
-    }
-}
-
-@media (min-width: 2800px) {
-    .navbar {
-        padding-right: 500px; /* Further increase padding-right for even larger screens */
-    }
-    .intro {
-        margin-right: 500px; /* Further increase margin-right for even larger screens */
-    }
-}
 
 ul {
     padding-left: 0; /* Remove default padding */
@@ -200,8 +153,9 @@ li {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
     gap: 30px;
-    padding: 40px;
     justify-content: center;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 /* Individual project card */
@@ -310,8 +264,11 @@ li {
     margin-top: 50px;
 }
 
-
-
+.grid-container {
+    display: grid;
+    margin-right: 50px;
+    margin-left: 50px;
+}
 
 
 
@@ -327,7 +284,6 @@ li {
 @media (max-width: 800px) {
     .navbar {
         justify-content: center;
-        margin-left: 40px;
     }
     .main-title {
         top: 5%;
@@ -338,7 +294,6 @@ li {
     .intro {
         margin-top: 50px;
         text-align: center; 
-        margin-left: 40px;
     }
     .social-icons {
         display: flex;
