@@ -52,6 +52,13 @@ function Intro() {
                         <a href="https://github.com/leesolivia14" target="_blank" rel="noopener noreferrer">
                             <ion-icon name="logo-github"></ion-icon>
                         </a>
+                        <a href="https://www.worldcubeassociation.org/persons/2015LEEO01" target="_blank" rel="noopener noreferrer">
+                            <img 
+                            src="/assets/icons/rubik's-cube.png" 
+                            alt="Cubing" 
+                            style={{ width: '30px', height: '30px' }} 
+                            />
+                        </a>
                     </div>
                 </p>
             </div>
